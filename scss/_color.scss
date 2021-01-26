@@ -1,0 +1,22 @@
+a {
+    color: black;
+  }
+
+.header a:hover {
+    background-color: #FFA88E;
+    color: white;
+  }
+
+.header a.active {
+    background-color: none;
+    color: #FFA88E;
+    }
+.fondoFuerte {
+      background-color: #595755
+    }
+
+.blog {
+      background-image: url("img/backblog.jpg");
+      padding: 10px 10px 10px 10px;
+  
+      }

@@ -1,0 +1,24 @@
+$plan: KonMarie; /* Mi constante */
+p {
+      @if $plan == Konmarie {
+             color: #884767;
+      } 
+      
+      @else if $plan == Exebio {
+             color: #ad3672;
+     } 
+     
+     @else if $plan == Masters {
+                color: #db984c;
+     } 
+     
+     @else if $plan == Digital {
+                color: #4cbedb;
+     } 
+     
+}
+
+@for $edad from 1 through 18 {
+    .Advertencia-#{edad} { font-size: 18px * $edad; }
+  }
+  

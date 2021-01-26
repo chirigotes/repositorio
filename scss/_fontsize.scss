@@ -1,0 +1,84 @@
+a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 10px;
+    border-radius: 4px;
+  }
+
+.header-right {
+    float: right;
+  }
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-align: left;
+  }
+
+
+h1{
+    color: #FFA88E;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    animation-duration: 2s;
+    animation-name: aparecer; 
+} 
+h2{
+    color: #FFA88E;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 50px;
+    animation-duration: 4s;
+    animation-name: fadeInRight;
+ }
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+
+.espaciado {
+    letter-spacing: 3px;
+  }
+
+.interlineado {
+    line-height: 1.5;
+  }
+  
+.TextoMayuscula{
+    text-transform: uppercase; 
+  }
+
+p big {
+    line-height: 1.8;
+  }
+
+.entrada .texto {
+    padding: 0px 15px 15px;
+    }
+
+.entrada .texto > button {
+    background: gray;
+    border: 0;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    }
+
+textarea {
+        width: 160px; height: 160px;
+        transition: all 1s;
+      
+      :focus {
+        width: 300px;
+        font-size: 20px;
+      }
+}
+  
