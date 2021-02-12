@@ -11,21 +11,12 @@ a {
     float: right;
   }
 
-.hero-text {
-    text-align: left;
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    text-align: left;
-    
-  }
-
 
 h1{
-    color: #FFA88E;
+    color: #ffa88e;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     animation-duration: 2s;
     animation-name: aparecer; 
 } 
@@ -39,10 +30,14 @@ h2{
     animation-name: fadeInRight;
  }
 
+ h3{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 16px;
+ }
+
 p{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 14px;
+   
 }
 
 .espaciado {
