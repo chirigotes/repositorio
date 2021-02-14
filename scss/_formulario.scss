@@ -18,7 +18,4 @@ p {
      
 }
 
-@for $edad from 1 through 18 {
-    .Advertencia-#{edad} { font-size: 18px * $edad; }
-  }
   

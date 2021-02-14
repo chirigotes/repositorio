@@ -13,12 +13,12 @@
 	<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 	<link rel="stylesheet" href="css/home_magia.css";>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	</head>	
+</head>	
 <!----------------------------------------->
 <!-----------------BODY ------------------->
 <!----------------------------------------->
 
-	<body>
+<body class="fondoregistro">
 		<header>
 			<div class="topnav" id="myTopnav">
 				<nav class="header">
@@ -37,36 +37,21 @@
 				</nav>
 			</div>
 		</header> 
-
-		<div align="left"> <h1 text align="center">Registrate </h1></div>
+		<div>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
 	
-
 	<section>
-
-		<form>
-
-
-
-			<fieldset>
-					<legend><strong> Regístrate:</strong></legend>
-
-					<div>Nombre</div>
-						<input class="datos" type="name" name="name" >
-
-					<div>Apellido</div> <label for="apellido"></label>
-						<input class="datos" type="name" name="apellido" >
-
-					<div>Correo electrónico</div>
-						<input class="datos" type="email" name="email" >
-
-					<div class="edad">Edad
-						<input class="datos" type="number" name="edad" >
-					</div>
-			
-					<div>Ingrese su nacionalidad:</div>
-			
-					<select>
-			
+		<form action="#">
+			<h1> CONTACTO </h1>
+			<input type="text" name="Nombre" placeholder="Nombre">
+			<input type="text" name="Telêfono" placeholder="Teléfono">
+			<textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+			<h3> Ingrese su nacionalidad </h3>
+				<select>
 					<option value="Fra">Francia</option>
 					<option value="Esp">España</option>
 					<option value="Ita">Italia</option>
@@ -77,39 +62,27 @@
 					<option value="Lux">Luxemburgo</option>
 					<option value="Pol">Polonia</option>
 					<option value="Otr">Otro</option>
-					</select>
+				</select>
 
-			
 				<div class="plan">
-				<strong> ¿En qué plan podría estar interesado?</strong>
-				<div> KonMarie </div> <input type="radio" name="plan" value="KonMarie">
-				<div> Exebio </div> <input type="radio" name="plan" value="Exebio">
-				<div> Masters </div> <input type="radio" name="plan" value="Masters">
-				<div> Online </div> <input type="radio" name="plan" value="Online">
+					<br>
+					<h3><strong> ¿En qué plan podría estar interesado?</strong></h3>
+					<h3> KonMarie </h3> <input type="radio" name="plan" value="KonMarie">
+					<h3> Exebio </h3> <input type="radio" name="plan" value="Exebio">
+					<h3> Masters </h3> <input type="radio" name="plan" value="Masters">
+					<h3> Online </h3> <input type="radio" name="plan" value="Online">
+					</div>
 				</div>
 
-				<div>Suscribirme al boletín</div> <input type="checkbox" name="suscribirme" value="1">
-
-				<div>¿Cómo se enteró del método KonMarie? </div>
-				<textarea name="comentario"> Ingrese su comentario </textarea> 
-
-
-			</fieldset>
-
-
-		
-			<div> Bienvenido al mundo del Orden </div>
-
-			<input type="submit"  value="Enviar"/>
-			<input type="reset" value="Reiniciar"/>
-
-
+				<h1>Suscribirme al boletín</h1> <input type="checkbox" name="suscribirme" value="1">
+				<input type="text" name="Correo" placeholder="Correo">
+				<input id="boton" type="button" value="Enviar" id="boton_formulario">
 		</form>
+	</section>	
 
 	</section>
 
 	 <!--Aca inicia la sección con información-->
-</body>
 
 <footer id="grad">
 
@@ -132,8 +105,5 @@
 	</footer>
 	
 </body> 
-<!----------------------------------------->
-<!-----------------BODY ------------------->
-<!----------------------------------------->
 
 </html> 

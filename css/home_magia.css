@@ -31,7 +31,9 @@ h2 {
 h3 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  font-size: 16px; }
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px; }
 
 .espaciado {
   letter-spacing: 3px; }
@@ -113,24 +115,13 @@ body {
   grid-column-end: x3;
   grid-column: x0 / x3; }
 
-.sidebar {
-  position: sticky;
-  grid-column-start: x0;
-  grid-column-end: x1;
-  grid-row-start: y1;
-  grid-row-end: y3;
-  color: white;
-  padding: 5px;
-  align-items: center;
-  inset-inline-start: 1; }
-
 .textbar {
   padding-right: 5px;
-  margin-left: -100px;
+  margin-left: 0px;
   grid-row-start: y1;
   grid-row-end: y3;
   grid-column: x2 / x3;
-  text-align: left;
+  text-align: right;
   display: inline-block; }
 
 .content {
@@ -143,7 +134,6 @@ body {
   grid-row-end: y3; }
 
 .section .servicios {
-  background-color: #8b8681;
   text-align: center;
   margin-top: 8px;
   margin-right: 20px;
@@ -151,7 +141,7 @@ body {
   margin-left: 20px;
   padding: 5px 50px 50px 25px; }
 
-.section .numeros {
+.numeros {
   text-align: center;
   margin-top: 8px;
   margin-right: 20px;
@@ -159,7 +149,7 @@ body {
   margin-left: 20px;
   padding: 5px 50px 50px 25px; }
 
-.section .intro {
+.intro {
   text-align: justify;
   margin-top: 8px;
   margin-right: 40px;
@@ -270,9 +260,6 @@ nav ul li a:hover {
   background: url("../img/fondo.png") no-repeat center;
   background-size: cover; }
 
-#herotext {
-  text-align: left; }
-
 .contenedor {
   position: absolute;
   top: 50%;
@@ -311,6 +298,168 @@ nav ul li a:hover {
 
 .btn:hover {
   opacity: 0.9; }
+
+.table td, .table th {
+  padding: 12px 15px;
+  border: 1px solid #55504c;
+  text-align: center; }
+
+.table th {
+  background-color: #ffa88e;
+  color: #ffffff; }
+
+.table tbody tr:nth-child(even) {
+  background-color: #fae8e8; }
+
+@media (max-width: 500px) {
+  .table thead {
+    display: none; }
+    .table thead form {
+      width: 100%; }
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%; }
+  .table tr {
+    margin-bottom: 15px; }
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative; }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left; } }
+
+.fondoblog {
+  background-image: url("../img/backblog.jpg"); }
+
+.fondoregistro {
+  background-image: url("../img/mariefondo.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0; }
+
+form {
+  width: 450px;
+  margin: auto;
+  background: #b47869e6;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px; }
+  form h1 {
+    text-align: left;
+    color: #e2d2d2; }
+  form h3 {
+    text-align: left;
+    color: #e2d2d2;
+    font-size: 16px; }
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px 9px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none; }
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%; }
+
+#boton {
+  background: #ffa88e;
+  color: #fff;
+  padding: 20px; }
+
+#boton:hover {
+  cursor: pointer; }
+
+.plan {
+  text-align: left; }
+
+.yosoy h1 {
+  color: #fff;
+  font-size: 30px;
+  margin: auto; }
+
+.yosoy p {
+  font-size: 18px;
+  text-align: justify;
+  margin: auto;
+  padding: 10px 2%;
+  line-height: 1.8;
+  width: 50%; }
+
+.izquierda {
+  background: #ffa88e;
+  height: 100vh;
+  width: 50%;
+  text-align: center; }
+  .izquierda h1 {
+    color: #fff;
+    font-size: 48px;
+    margin: auto;
+    margin-top: 20%; }
+  .izquierda p {
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    margin: auto;
+    padding: 10% 10%;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 10%;
+    line-height: 2; }
+
+.derecha {
+  background-image: url("../img/derecha.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 100vh;
+  text-align: right; }
+
+.derecha2 {
+  background: #ffa88e;
+  height: 100vh;
+  width: 50%; }
+  .derecha2 h1 {
+    color: #fff;
+    font-size: 48px;
+    margin: auto;
+    margin-top: 20%; }
+  .derecha2 p {
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    margin: auto;
+    line-height: 2;
+    padding: 10% 10%;
+    margin-top: 20%;
+    margin-left: 12%;
+    margin-right: 12%; }
+
+.izquierda2 {
+  background-image: url("../img/izquierda.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 100vh;
+  text-align: right; }
+
+#pantalladividida {
+  display: flex; }
+
+.creative {
+  color: #fff; }
 
 .header {
   overflow: hidden;
@@ -393,56 +542,3 @@ img.TextoArriba {
   max-width: 100%; }
 
 /* Mi constante */
-.Advertencia-edad {
-  font-size: 18px; }
-
-.Advertencia-edad {
-  font-size: 36px; }
-
-.Advertencia-edad {
-  font-size: 54px; }
-
-.Advertencia-edad {
-  font-size: 72px; }
-
-.Advertencia-edad {
-  font-size: 90px; }
-
-.Advertencia-edad {
-  font-size: 108px; }
-
-.Advertencia-edad {
-  font-size: 126px; }
-
-.Advertencia-edad {
-  font-size: 144px; }
-
-.Advertencia-edad {
-  font-size: 162px; }
-
-.Advertencia-edad {
-  font-size: 180px; }
-
-.Advertencia-edad {
-  font-size: 198px; }
-
-.Advertencia-edad {
-  font-size: 216px; }
-
-.Advertencia-edad {
-  font-size: 234px; }
-
-.Advertencia-edad {
-  font-size: 252px; }
-
-.Advertencia-edad {
-  font-size: 270px; }
-
-.Advertencia-edad {
-  font-size: 288px; }
-
-.Advertencia-edad {
-  font-size: 306px; }
-
-.Advertencia-edad {
-  font-size: 324px; }
