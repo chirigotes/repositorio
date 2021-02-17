@@ -53,5 +53,144 @@ textarea {
       }
 }
 
+.contenedor h1{ 
+  font-size: 72px;
+  letter-spacing: 0.2em;
+}
+
+.contenedor h1 span{
+  border: 0px solid #ffa88e;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px 0px;
+  display: inline-block;
+}
+
+.des{
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  display:block;
+  font-size: 26px;
+  text-shadow: 0 0 0 2px rgb(255, 255, 255);
+}
+
+.tituloBlog {
+
+  h1 {
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    margin-left: 25px;
+  }
+}
+
+.textbar {
+  padding-right: 5px;
+  margin-left: 0px;
+  grid-row-start: y1 ;
+  grid-row-end: y3;
+  grid-column: x2 / x3;
+  text-align: right;
+  display: inline-block;  
+}
+
+.SectionIntro{
+  
+  text-align: justify;
+  margin: auto;
+  padding: 4% 8%;
+
+}
+
+.numeros{
+  text-align: center;
+  margin-top: 8px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 5px 50px 50px 25px;
+}
+
+.NumerosOrden {
+background-color: #ffe3ce;
+h1 {
+  font-size: 40px;
+  color: #ffa88e;
+}
+
+h3 {
+  font-size: 20px;
+  color: #464343;
+}
+
+}
+
+.yosoy {
+
+  h1{
+    color:#fff;
+    font-size: 30px;
+    margin: auto;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: justify;
+    margin: auto;
+    padding: 10px 1%;
+    line-height: 1.8;
+    width: 50%;
+  } 
+}
+
+.derecha2 {
+  background: #ffa88e;
+  height: 100vh;
+  width: 50%;
+
+  h1 {
+    color: #fff;
+    font-size: 48px;
+    margin:auto;
+    margin-top: 20%;
+  }
+
+  p{
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    margin: auto;
+    line-height: 2;
+    padding: 10% 10%;
+    margin-top: 20%;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+}
+
+.izquierda {
+  background: #ffa88e;
+  height: 100vh;
+  width: 50%;
+  text-align: center;
+
+  h1 {
+    color: #fff;
+    font-size: 48px;
+    margin:auto;
+    margin-top: 20%;
+  }
+  p {
+    color: #fff;
+    font-size: 16px;
+    text-align: justify;
+    margin: auto;
+    padding: 10% 10%;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 10%;
+    line-height: 2;
+  }
+}
+
 
   

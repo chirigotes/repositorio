@@ -17,10 +17,27 @@
     background-color: #FFB99F
 }
 
+#boton{
+  background: #ffa88e;
+  color:#fff;
+  padding: 20px;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
 
 #grad {
     background-image: linear-gradient( #FFE4CF, #ffa88e);
    }
+
+#pantalladividida {
+    display: flex;
+  }
+  
+#check {
+    display:none;
+  }
 
 @media only screen and (min-width: 1580px) {
  
