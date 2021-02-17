@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box; }
-
 h1 {
   color: #ffa88e;
   font-family: 'Montserrat', sans-serif;
@@ -27,15 +24,6 @@ h3 {
 .espaciado {
   letter-spacing: 3px; }
 
-.interlineado {
-  line-height: 1.5; }
-
-.TextoMayuscula {
-  text-transform: uppercase; }
-
-p big {
-  line-height: 1.8; }
-
 .entrada .texto {
   padding: 0px 15px 15px; }
 
@@ -43,7 +31,7 @@ p big {
   background: gray;
   border: 0;
   color: white;
-  margin-top: 15px;
+  margin-top: 14px;
   padding: 10px;
   width: 100%; }
 
@@ -68,7 +56,8 @@ textarea {
 
 .blog {
   background-image: url("img/backblog.jpg");
-  padding: 10px 10px 10px 10px; }
+  padding: 10px 10px 10px 10px;
+  width: 100%; }
 
 * {
   padding: 0;
@@ -79,13 +68,15 @@ textarea {
 
 html {
   display: flex;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   letter-spacing: 0.5px;
-  flex-wrap: wrap; }
+  width: 100%;
+  overflow-x: hidden; }
 
 .topnav {
   overflow: hidden; }
@@ -158,13 +149,13 @@ body {
   padding: 4% 8%; }
 
 .entrada {
-  width: 250px;
+  width: 25%;
   margin: 10px;
   border: 1px color #ccc;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); }
 
 .entrada:nth-child(1) {
-  width: 550px; }
+  width: 75%; }
 
 .redes-container {
   display: flex;
@@ -232,7 +223,7 @@ nav ul {
   display: flex;
   margin-top: 1%;
   margin-bottom: 1%;
-  padding-right: 2px; }
+  padding-right: 15px; }
 
 nav ul li {
   display: inline-block;
@@ -242,7 +233,7 @@ nav ul li {
 nav ul li a {
   color: #68635e;
   float: left;
-  padding: 12px;
+  padding: 7px 12px;
   text-decoration: none;
   line-height: 10px;
   font-size: 16px;
@@ -309,10 +300,15 @@ nav ul li a:hover {
 .btn:hover {
   opacity: 0.9; }
 
+.table {
+  width: 100%;
+  border-collapse: collapse; }
+
 .table td, .table th {
   padding: 12px 15px;
   border: 1px solid #55504c;
-  text-align: center; }
+  text-align: center;
+  font-size: 16px; }
 
 .table th {
   background-color: #ffa88e;
@@ -320,39 +316,6 @@ nav ul li a:hover {
 
 .table tbody tr:nth-child(even) {
   background-color: #fae8e8; }
-
-@media (max-width: 650px) {
-  .table thead {
-    display: none; }
-    .table thead form {
-      width: 100%; }
-  .yosoy .izquierda .derecha2 .derecha .izquierda2 {
-    display: wrap; }
-    .yosoy .izquierda .derecha2 .derecha .izquierda2 p {
-      font-size: 11px;
-      text-align: left; }
-    .yosoy .izquierda .derecha2 .derecha .izquierda2 div {
-      width: 100%;
-      height: 50%; }
-  .table, .table tbody, .table tr, .table td {
-    display: block;
-    width: 100%; }
-  .table tr {
-    margin-bottom: 15px; }
-  .table td {
-    text-align: right;
-    padding-left: 50%;
-    text-align: right;
-    position: relative; }
-  .table td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: left; } }
 
 .fondoblog {
   background-image: url("../img/backblog.jpg"); }
@@ -428,7 +391,7 @@ textarea {
     margin-top: 20%; }
   .izquierda p {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
     margin: auto;
     padding: 10% 10%;
@@ -480,69 +443,21 @@ textarea {
   color: #fff; }
 
 .checkbtn {
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   float: right;
   line-height: 40px;
   margin-top: 1%;
-  margin-right: 15px;
+  margin-right: 40px;
   cursor: pointer;
   display: none; }
 
 #check {
   display: none; }
 
-@media (max-width: 900px) {
-  nav ul li a {
-    font-size: 13px; } }
-
-@media (max-width: 750px) {
-  nav ul li a {
-    font-size: 10.5px; } }
-
-@media (max-width: 650px) {
-  .checkbtn {
-    display: block; }
-  .entrada {
-    width: 100%;
-    size: cover;
-    margin: 5px; }
-  .entradas {
-    size: cover;
-    width: 50%;
-    margin: 5px; }
-  ul {
-    position: fixed;
-    background-color: #b47869e6;
-    padding-top: 2%;
-    padding-left: 3%;
-    width: 100%;
-    height: 5vh;
-    top: 74px;
-    left: -120%;
-    text-align: center;
-    transition: all .5s; }
-  nav ul li {
-    display: block;
-    margin: 0px 0;
-    line-height: 30px;
-    text-align: center; }
-  nav ul li a {
-    font-size: 18px;
-    text-align: center; }
-  a:hover, a.active {
-    background: #fff;
-    color: #fff; }
-  p {
-    font-size: 13px;
-    margin: 5%; }
-  h3 {
-    margin-top: 10px;
-    font-size: 16px; }
-  button {
-    width: 90%; }
-  #check:checked ~ ul {
-    left: 0; } }
+.ImagenNosotros {
+  background-image: url("img/covernosotros.jpg");
+  width: auto; }
 
 .header {
   overflow: hidden;
@@ -612,11 +527,140 @@ input.datos {
   text-align: center;
   background-color: #FFB99F; }
 
-#TextoArriba {
-  vertical-align: text-top; }
-
 #grad {
   background-image: linear-gradient(#FFE4CF, #ffa88e); }
+
+@media only screen and (min-width: 1580px) {
+  nav ul li a {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 700px) {
+  nav ul li a {
+    font-size: 13px;
+    margin-right: -5px; }
+  .logo {
+    width: 140px; } }
+
+@media (max-width: 500px) {
+  .table thead {
+    display: none; }
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%; }
+  .table tr {
+    margin-bottom: 15px; }
+  .table td {
+    text-align: right;
+    padding-left: 25%;
+    text-align: right;
+    position: relative; }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left; } }
+
+@media screen and (max-width: 375px) {
+  .yosoy {
+    width: 100%; }
+    .yosoy p {
+      font-size: 13px;
+      line-height: 1.5;
+      text-align: left;
+      margin: 0% 0% 0% 15%;
+      padding: 5px 0px 5px 2px; }
+  form {
+    width: 375px; }
+  .entrada {
+    width: 100%;
+    height: 100vh;
+    margin: 0px; }
+    .entrada img {
+      width: 375px; }
+    .entrada .texto {
+      padding-left: 0px;
+      padding-right: 0px; }
+      .entrada .texto p {
+        font-size: 11px; }
+  .entradas {
+    width: 100%;
+    height: 100vh;
+    margin: 0px; }
+  img {
+    width: 375px;
+    align-items: center; }
+  iframe {
+    width: 360px; }
+  .izquierda p {
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left; }
+  .izquierda h1 {
+    font-size: 20px; }
+  .izquierda2 {
+    height: 100vh; }
+  .derecha {
+    height: 100vh; }
+  .derecha2 p {
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: right; }
+  .derecha2 h1 {
+    font-size: 20px; }
+  .entrada {
+    width: 100%;
+    size: cover;
+    margin: 5px; }
+  .entradas {
+    size: cover;
+    width: 50%;
+    margin: 5px; }
+  p {
+    font-size: 12px;
+    margin: 5%; }
+  h3 {
+    margin-top: 10px;
+    font-size: 13px; }
+  h2 {
+    font-size: 25px; }
+  h1 {
+    font-size: 14px; }
+  span {
+    font-size: 12px; }
+  button {
+    width: 90%; } }
+
+@media (max-width: 750px) {
+  .checkbtn {
+    display: block; }
+  nav ul {
+    position: fixed;
+    background-color: #b47869e6;
+    padding-top: 2%;
+    padding-left: 2%;
+    width: 100%;
+    height: 5vh;
+    top: 74px;
+    left: -120%;
+    text-align: center;
+    transition: all .5s; }
+  nav ul li {
+    display: block;
+    margin: 0px 0;
+    line-height: 30px;
+    text-align: center; }
+  nav ul li a {
+    font-size: 13px;
+    text-align: center; }
+  a:hover, a.active {
+    background: none;
+    color: #fff; }
+  #check:checked ~ ul {
+    left: 0; } }
 
 img.TextoArriba {
   vertical-align: text-top; }

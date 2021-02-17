@@ -9,16 +9,17 @@
 html {
   display: flex;
   height: 100%;
+  width: 100%;
     }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     letter-spacing: 0.5px;
-    flex-wrap: wrap;
+    width: 100%;
+    overflow-x: hidden;
   }
 
-  
   .topnav {
     overflow: hidden;
     .icon {
@@ -113,18 +114,15 @@ body {
 }
 
 .entrada {
-    width: 250px;
+    width: 25%;
     margin: 10px;
     border: 1px color #ccc;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   } 
 
 .entrada:nth-child(1) {
-    width: 550px;
-
+    width: 75%;
   }
-
-
 
 .redes-container{
     display:flex;
@@ -204,7 +202,7 @@ nav ul{
   display: flex;
   margin-top: 1%;
   margin-bottom: 1%;
-  padding-right: 2px;
+  padding-right: 15px;
 }
 
 nav ul li{
@@ -216,7 +214,7 @@ nav ul li{
 nav ul li a {
   color: #68635e;
   float: left;
-  padding: 12px;
+  padding: 7px 12px ;
   text-decoration: none;
   line-height: 10px;
   font-size: 16px;
@@ -295,11 +293,16 @@ nav ul li a:hover {
 .btn:hover {
   opacity: 0.9;
 }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
 .table td,.table th{
   padding: 12px 15px;
   border: 1px solid #55504c;
   text-align: center;
+  font-size: 16px;
 }
 
 .table th{
@@ -307,55 +310,10 @@ nav ul li a:hover {
   color:#ffffff
 }
 
-.table tbody tr:nth-child(even) {
+.table tbody tr:nth-child(even){
   background-color: #fae8e8;
 }
 
-@media(max-width: 650px) {
-  .table thead{
-    display:none;
-    form {
-      width: 100%;
-    }
-  }
-
-  .yosoy .izquierda .derecha2 .derecha .izquierda2{
-    display: wrap;
-    p {
-      font-size: 11px;
-      text-align: left;
-    }
-
-    div {
-      width: 100%;
-      height: 50%;
-  }
-}
-
-  .table, .table tbody, .table tr, .table td{
-    display: block;
-    width:100%;
-  }
-  .table tr {
-    margin-bottom:15px;
-  }
-  .table td {
-    text-align: right;
-    padding-left: 50%;
-    text-align: right;
-    position: relative;
-  }
-  .table td::before {
-    content: attr(data-label);
-    position: absolute;
-    left:0;
-    width: 50%;
-    padding-left:15px;
-    font-size:15px;
-    font-weight: bold;
-    text-align: left;
-  }
-}
 
 .fondoblog {
   background-image: url('../img/backblog.jpg');
@@ -451,7 +409,7 @@ textarea {
   }
   p {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
     margin: auto;
     padding: 10% 10%;
@@ -515,12 +473,12 @@ textarea {
 }
 
 .checkbtn {
-  font-size: 20px;
+  font-size: 25px;
   color:white;
   float: right;
   line-height: 40px;
   margin-top: 1%;
-  margin-right: 15px;
+  margin-right: 40px;
   cursor: pointer;
   display: none;
 }
@@ -529,90 +487,10 @@ textarea {
   display:none;
 }
 
-@media (max-width: 900px) {
- 
-  nav ul li a {
-    font-size: 13px;
-  } 
+.ImagenNosotros {
+  background-image: url('img/covernosotros.jpg');
+ width: auto;
 }
 
-@media (max-width: 750px) {
- 
-  nav ul li a {
-    font-size: 10.5px;
-  } 
 
-}
-
-@media (max-width:650px){
-  
-    .checkbtn{
-      display: block;
-    }
-
-    .entrada {
-      width: 100%;
-      size: cover;
-      margin: 5px;
-
-    }
-    
-    .entradas {
-      size: cover;
-      width: 50%;
-      margin: 5px;
-    }
-
-  
-    ul {
-    position: fixed;
-    background-color: #b47869e6;
-    padding-top: 2%;
-    padding-left: 3%;
-    width: 100%;
-    height: 5vh;
-    top: 74px;
-    left: -120%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 0px 0;
-    line-height: 30px;
-    text-align: center;
-  }
-
-
-  nav ul li a {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  a:hover,a.active {
-    background: #fff;
-    color: #fff;
-  }
-
-  p {
-    font-size: 13px;
-    margin: 5%;
-  }
-
-  h3 {
-    margin-top: 10px;
-    font-size: 16px;
-
-  }
-
-  button {
-    width: 90%;
-  }
-
-  #check:checked ~ ul{
-    left: 0;
-  }
-
-
-}
 
